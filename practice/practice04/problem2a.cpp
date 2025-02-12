@@ -2,7 +2,8 @@
 #include <string>
 
 template <typename T>
-T calculate(T num1, T num2, char op) {
+T calculate(T num1, T num2, char op)
+{
     T result;
     switch (op)
     {
@@ -48,7 +49,7 @@ int main()
     std::cout << "Enter operation (+, -, *, /): ";
     std::cin >> operation;
 
-    if (input1.find('.') != std::string::npos or input2.find('.') != std::string::npos)
+    if (input1.find('.') != std::string::npos || input2.find('.') != std::string::npos)
     {
         double num1 = std::stod(input1);
         double num2 = std::stod(input2);
