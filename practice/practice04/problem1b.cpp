@@ -24,7 +24,7 @@ int main()
             std::cin >> choice;
         }
 
-        std::cin.ignore(256, '\n');  // Clear the newline from input buffer
+        std::cin.ignore(256, '\n');
 
         switch (choice)
         {
