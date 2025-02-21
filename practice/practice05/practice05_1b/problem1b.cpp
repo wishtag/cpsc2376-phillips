@@ -2,7 +2,8 @@
 #include <vector>
 #include <iterator>
 
-int main() {
+int main()
+{
     std::vector<int> nums;
     int int_count;
     int input;
