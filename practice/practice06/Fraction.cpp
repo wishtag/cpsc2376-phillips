@@ -54,6 +54,7 @@ std::ostream& operator<<(std::ostream& out, const Fraction& frac) {
 std::istream& operator>>(std::istream& in, Fraction& frac) {
     char slash;
     in >> frac.num >> slash >> frac.den;
+    frac.simplify();
     if (frac.den == 0) throw std::invalid_argument("Denominator cannot be zero");
     return in;
 }
