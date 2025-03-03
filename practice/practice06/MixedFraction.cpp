@@ -6,7 +6,7 @@ MixedFraction::MixedFraction(int w, int n, int d) : whole(w), Fraction(n, d) {}
 MixedFraction::MixedFraction(const Fraction& fraction) {
 	whole = fraction.getNumerator() / fraction.getDenominator();
 	int n = fraction.getNumerator() % fraction.getDenominator();
-	Fraction(n, fraction.getDenominator());
+	*this = MixedFraction(whole, n, fraction.getDenominator());
 }
 
 std::ostream& operator<<(std::ostream& out, const MixedFraction& frac) {
